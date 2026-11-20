@@ -30,7 +30,7 @@ img{display:block;max-width:100%}
 .assinatura{display:flex;align-items:center;gap:7px;color:var(--creme)}
 .assinatura svg{width:9px;height:9px;flex:none}
 .hero{position:relative;background:var(--ink);overflow:hidden;isolation:isolate}
-.pontilhado{position:absolute;left:45.6%;top:-443px;width:560px;height:560px;z-index:-1;pointer-events:none;animation:respira 6s ease-in-out infinite}
+.pontilhado{position:absolute;left:45.64%;top:-443px;width:560px;height:560px;max-width:none;z-index:2;pointer-events:none}
 .topo{padding:24px 24px 12px}
 .foto-hero{position:relative;aspect-ratio:1170/804}
 .foto-hero img{width:100%;height:100%;object-fit:cover}
@@ -92,8 +92,7 @@ img{display:block;max-width:100%}
 .rodape small{font-size:11px;color:rgba(245,240,230,.45)}
 a:focus-visible,button:focus-visible{outline:2px solid var(--roxo);outline-offset:3px}
 @keyframes corre{to{transform:translateX(-50%)}}
-@keyframes respira{0%,100%{opacity:1}50%{opacity:.7}}
-@media (prefers-reduced-motion:reduce){.faixa-trilho,.pontilhado{animation:none}.item-corpo,.item-mais,.link,.link-botao svg,.botao svg{transition:none}}
+@media (prefers-reduced-motion:reduce){.faixa-trilho{animation:none}.item-corpo,.item-mais,.link,.link-botao svg,.botao svg{transition:none}}
 @media (min-width:431px){body{padding:0}.pagina{box-shadow:0 0 0 1px rgba(255,255,255,.06)}}
 </style>
 </head>
