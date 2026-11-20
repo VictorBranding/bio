@@ -47,21 +47,21 @@ img{display:block;max-width:100%}
 .faixa-grupo span{font-size:17px;font-weight:700;letter-spacing:-.01em;white-space:nowrap}
 .faixa-grupo svg{width:14px;height:14px;flex:none}
 .links{padding:40px 24px 48px;display:grid;gap:12px}
-.link{display:flex;align-items:center;gap:16px;padding:18px 20px;background:linear-gradient(90deg,#ECE7DD,#DCD6CA);transition:transform .25s ease,box-shadow .25s ease}
+.link{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:20px;background:var(--linen);transition:transform .25s ease,box-shadow .25s ease}
 .link:hover,.link:focus-visible{transform:translateY(-2px);box-shadow:0 10px 24px -14px rgba(10,10,15,.45)}
 .link:active{transform:translateY(0) scale(.99)}
 .link-textos{flex:1;display:grid;gap:4px;min-width:0}
 .link-rotulo{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;opacity:.55}
 .link-titulo{font-size:18px;font-weight:700;letter-spacing:-.02em;line-height:1.25}
 .link-apoio{font-size:13px;line-height:1.35;opacity:.65}
-.link-botao{width:44px;height:44px;background:linear-gradient(90deg,#24242C,#0A0A0F);display:grid;place-items:center;flex:none}
+.link-botao{width:44px;height:44px;border-radius:50%;background:var(--ink);display:grid;place-items:center;flex:none}
 .link-botao svg{width:16px;height:16px;transform:rotate(-45deg);transition:transform .25s ease}
 .link:hover .link-botao svg,.link:focus-visible .link-botao svg{transform:rotate(-45deg) translateX(3px)}
-.link-destaque{background:linear-gradient(90deg,#C10016,#8E0010);color:var(--creme);padding:24px 20px}
+.link-destaque{background:var(--carmim);color:var(--creme);padding:24px 20px}
 .link-destaque .link-rotulo{opacity:.75}
 .link-destaque .link-titulo{font-size:22px}
 .link-destaque .link-apoio{opacity:.85}
-.link-destaque .link-botao{background:linear-gradient(90deg,#FFFFFF,#EDE6D8)}
+.link-destaque .link-botao{background:var(--creme)}
 .servicos{background:var(--ink);color:var(--creme);padding:56px 24px}
 .servicos-topo{display:grid;gap:12px;padding-bottom:24px}
 .titulo-secao{font-size:32px;font-weight:700;letter-spacing:-.03em;line-height:1.05}
@@ -155,7 +155,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--roxo);outline-offse
       <p>Se a sua marca merece mais que improviso e quer virar referência, precisa de um marketing que enxergue o todo.</p>
     </div>
     <div class="sanfona">
-      <div class="item aberto"><button class="item-botao" aria-expanded="true"><span class="item-num">01</span><span class="item-titulo">Estratégia e gestão de marcas</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>Posicionamento claro, proposta de valor e uma voz coerente em cada ponto de contato. Com acompanhamento contínuo, a marca deixa de ser mais uma e vira referência.</p></div></div></div>
+      <div class="item"><button class="item-botao" aria-expanded="false"><span class="item-num">01</span><span class="item-titulo">Estratégia e gestão de marcas</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>Posicionamento claro, proposta de valor e uma voz coerente em cada ponto de contato. Com acompanhamento contínuo, a marca deixa de ser mais uma e vira referência.</p></div></div></div>
       <div class="item"><button class="item-botao" aria-expanded="false"><span class="item-num">02</span><span class="item-titulo">Identidade visual</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>Logo, cores, tipografia e um sistema que mantém tudo coerente. Mais do que bonita, a identidade precisa mostrar o que a marca é.</p></div></div></div>
       <div class="item"><button class="item-botao" aria-expanded="false"><span class="item-num">03</span><span class="item-titulo">Growth marketing</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>Atrair novos pacientes é só uma parte. Growth também é manter quem já chegou por perto e traçar a estratégia para o negócio crescer, com decisões baseadas em dados.</p></div></div></div>
       <div class="item"><button class="item-botao" aria-expanded="false"><span class="item-num">04</span><span class="item-titulo">IA com direção criativa</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>A IA potencializa o processo criativo e abre novas possibilidades. No negócio, ajuda a tomar decisões com mais clareza, otimizando processos e transformando dados em informação.</p></div></div></div>
