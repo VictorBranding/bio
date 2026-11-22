@@ -26,49 +26,49 @@ p{text-wrap:pretty}
 h1,h2{text-wrap:balance}
 img{display:block;max-width:100%}
 .pagina{max-width:430px;margin:0 auto;background:var(--creme);overflow:hidden;min-height:100vh}
-.rubrica{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;line-height:1.3}
+.rubrica{font-size:13px;font-weight:500;line-height:1.3}
 .assinatura{display:flex;align-items:center;gap:7px;color:var(--creme)}
 .assinatura svg{width:9px;height:9px;flex:none}
 .hero{position:relative;background:var(--ink);overflow:hidden;isolation:isolate}
-.pontilhado{position:absolute;left:45.64%;top:-443px;width:560px;height:560px;max-width:none;z-index:2;pointer-events:none}
 .topo{padding:24px 24px 12px}
-.foto-hero{position:relative;aspect-ratio:1170/804}
+.foto-hero{position:relative;aspect-ratio:390/378}
 .foto-hero img{width:100%;height:100%;object-fit:cover}
-.nome{position:absolute;left:24px;bottom:7.5%;color:var(--creme);font-size:52px;font-weight:800;line-height:.92;letter-spacing:-.04em}
-.hero-textos{padding:8px 24px 40px;display:grid;gap:12px}
-.frase{color:var(--creme);font-size:min(24px,calc((100vw - 48px)*.07));white-space:nowrap;font-weight:700;letter-spacing:-.02em;line-height:1.15}
-.apoio-hero{color:rgba(245,240,230,.7);font-size:15px;line-height:1.5}
-.roxo{color:var(--roxo)}
-.carmim{color:var(--carmim)}
-.faixa{background:var(--roxo);overflow:hidden;padding:14px 0;color:var(--ink)}
+.foto-hero::after{content:"";position:absolute;inset:0 0 49px 0;background:linear-gradient(to bottom,rgba(10,10,15,0) 0,rgba(10,10,15,0) 62%,var(--ink) 100%);pointer-events:none}
+.nome{z-index:1}
+.nome{position:absolute;left:24px;bottom:79px;color:var(--creme);font-size:44px;font-weight:800;line-height:.92;letter-spacing:-.035em}
+.faixa{position:absolute;left:0;right:0;bottom:0;z-index:2;background:var(--roxo);overflow:hidden;padding:14px 0;color:var(--ink)}
 .faixa-trilho{display:flex;width:max-content;animation:corre 32s linear infinite}
 .faixa:hover .faixa-trilho,.faixa:active .faixa-trilho{animation-play-state:paused}
 .faixa-grupo{display:flex;align-items:center;gap:18px;padding-right:18px}
 .faixa-grupo span{font-size:17px;font-weight:700;letter-spacing:-.01em;white-space:nowrap}
 .faixa-grupo svg{width:14px;height:14px;flex:none}
-.links{padding:40px 24px 48px;display:grid;gap:12px}
-.link{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:20px;background:var(--linen);transition:transform .25s ease,box-shadow .25s ease}
-.link:hover,.link:focus-visible{transform:translateY(-2px);box-shadow:0 10px 24px -14px rgba(10,10,15,.45)}
-.link:active{transform:translateY(0) scale(.99)}
-.link-textos{flex:1;display:grid;gap:4px;min-width:0}
-.link-rotulo{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;opacity:.55}
-.link-titulo{font-size:18px;font-weight:700;letter-spacing:-.02em;line-height:1.25}
+.hero-textos{padding:20px 24px 32px;display:grid;gap:10px}
+.frase{color:var(--creme);font-size:min(24px,calc((100vw - 48px)*.07));white-space:nowrap;font-weight:700;letter-spacing:-.02em;line-height:1.15}
+.apoio-hero{color:rgba(245,240,230,.7);font-size:15px;line-height:1.5}
+.roxo{color:var(--roxo)}
+.carmim{color:var(--carmim)}
+.links{background:var(--ink);margin-top:-1px;padding:9px 24px 48px;display:grid;gap:12px}
+.link{display:flex;align-items:center;gap:14px;padding:18px 24px 18px 16px;border-radius:20px;background:var(--creme);color:var(--ink);transition:background-color .2s ease,transform .2s ease}
+.link-icone{width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--creme);display:grid;place-items:center;flex:none}
+.link-icone svg{width:20px;height:20px}
+.link-textos{flex:1;min-width:0;display:grid;gap:3px}
+.link-destaque .link-icone{background:var(--creme);color:var(--carmim)}
+.link-rotulo{font-size:12px;font-weight:500;opacity:.55}
+.link-titulo{font-size:17px;font-weight:700;letter-spacing:-.02em;line-height:1.25}
 .link-apoio{font-size:13px;line-height:1.35;opacity:.65}
-.link-botao{width:44px;height:44px;border-radius:50%;background:var(--ink);display:grid;place-items:center;flex:none}
-.link-botao svg{width:16px;height:16px;transform:rotate(-45deg);transition:transform .25s ease}
-.link:hover .link-botao svg,.link:focus-visible .link-botao svg{transform:rotate(-45deg) translateX(3px)}
-.link-destaque{background:var(--carmim);color:var(--creme);padding:24px 20px}
 .link-destaque .link-rotulo{opacity:.75}
-.link-destaque .link-titulo{font-size:22px}
 .link-destaque .link-apoio{opacity:.85}
-.link-destaque .link-botao{background:var(--creme)}
+.link:hover,.link:focus-visible{background:#fff}
+.link:active{transform:scale(.98)}
+.link-destaque{background:var(--carmim);color:var(--creme)}
+.link-destaque:hover,.link-destaque:focus-visible{background:#d4001a}
+.servicos{border-top:1px solid rgba(255,255,255,.1)}
 .servicos{background:var(--ink);color:var(--creme);padding:56px 24px}
 .servicos-topo{display:grid;gap:12px;padding-bottom:24px}
 .titulo-secao{font-size:32px;font-weight:700;letter-spacing:-.03em;line-height:1.05}
 .servicos-topo p{font-size:14px;opacity:.6;line-height:1.5}
 .item{border-bottom:1px solid rgba(255,255,255,.14)}
 .item-botao{width:100%;display:flex;align-items:center;gap:14px;padding:18px 0;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:pointer}
-.item-num{font-size:13px;font-weight:600;letter-spacing:.06em;color:var(--roxo)}
 .item-titulo{flex:1;font-size:18px;font-weight:700;letter-spacing:-.02em;line-height:1.3}
 .item-mais{width:18px;height:18px;flex:none;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
 .item.aberto .item-mais{transform:rotate(45deg)}
@@ -77,14 +77,15 @@ img{display:block;max-width:100%}
 .item-corpo>div{overflow:hidden}
 .item-corpo p{font-size:14px;line-height:1.5;opacity:.72;padding-bottom:18px}
 .quem{padding:56px 24px;display:grid;gap:16px}
-.quem-foto{border-radius:24px;overflow:hidden;aspect-ratio:342/400;margin-bottom:8px}
+.quem-foto{border-radius:6px;overflow:hidden;aspect-ratio:342/400;margin-bottom:8px}
 .quem-foto img{width:100%;height:100%;object-fit:cover}
 .quem .rubrica{opacity:.55}
+.servicos .rubrica{opacity:.55}
 .quem h2{font-size:34px;font-weight:700;letter-spacing:-.03em;line-height:1.1}
 .quem-texto{display:grid;gap:1.55em;font-size:15px;line-height:1.55;opacity:.75}
 .fechamento{background:var(--roxo);color:var(--ink);padding:48px 24px;display:grid;gap:14px;justify-items:start}
 .fechamento p{font-size:15px;line-height:1.5;opacity:.75;margin-bottom:4px}
-.botao{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--creme);border-radius:999px;padding:15px 20px 15px 24px;font-size:15px;font-weight:600;transition:transform .25s ease}
+.botao{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--creme);border-radius:6px;padding:15px 20px 15px 24px;font-size:15px;font-weight:600;transition:transform .25s ease}
 .botao svg{width:14px;height:14px;transition:transform .25s ease}
 .botao:hover svg,.botao:focus-visible svg{transform:translateX(3px)}
 .botao:active{transform:scale(.98)}
@@ -99,74 +100,57 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--roxo);outline-offse
 <body>
 <main class="pagina">
   <header class="hero">
-    <img class="pontilhado" src="img/pontilhado.webp" alt="" width="560" height="560">
     <div class="topo">
       <div class="assinatura rubrica"><svg viewBox="0 0 13 12.6" aria-hidden="true"><path d="M4.03 12.59L1.39 10.64L3.8 7.37L0 6.08L1.02 2.97L4.83 4.23V0H8.13V4.23L11.93 2.97L12.96 6.08L9.16 7.37L11.57 10.64L8.89 12.59L6.48 9.32L4.03 12.59Z" fill="#A855F7"/></svg>@victor.branding</div>
     </div>
     <div class="foto-hero">
-      <img src="img/hero.webp" alt="Retrato de Victor Coelho em preto e branco, sorrindo, de óculos" width="1170" height="804">
+      <img src="img/hero.webp" alt="Victor Coelho em preto e branco, de pé, sorrindo, de óculos e camisa polo escura" width="1170" height="1462">
       <h1 class="nome">Victor<br>Coelho</h1>
+      <div class="faixa" aria-hidden="true">
+        <div class="faixa-trilho">
+          <div class="faixa-grupo">
+            <span>Branding</span><svg viewBox="0 0 13 12.6"><path d="M4.03 12.59L1.39 10.64L3.8 7.37L0 6.08L1.02 2.97L4.83 4.23V0H8.13V4.23L11.93 2.97L12.96 6.08L9.16 7.37L11.57 10.64L8.89 12.59L6.48 9.32L4.03 12.59Z" fill="#0A0A0F"/></svg>
+            <span>Growth marketing</span><svg viewBox="0 0 13 12.6"><path d="M4.03 12.59L1.39 10.64L3.8 7.37L0 6.08L1.02 2.97L4.83 4.23V0H8.13V4.23L11.93 2.97L12.96 6.08L9.16 7.37L11.57 10.64L8.89 12.59L6.48 9.32L4.03 12.59Z" fill="#0A0A0F"/></svg>
+            <span>Design</span><svg viewBox="0 0 13 12.6"><path d="M4.03 12.59L1.39 10.64L3.8 7.37L0 6.08L1.02 2.97L4.83 4.23V0H8.13V4.23L11.93 2.97L12.96 6.08L9.16 7.37L11.57 10.64L8.89 12.59L6.48 9.32L4.03 12.59Z" fill="#0A0A0F"/></svg>
+            <span>IA com direção</span><svg viewBox="0 0 13 12.6"><path d="M4.03 12.59L1.39 10.64L3.8 7.37L0 6.08L1.02 2.97L4.83 4.23V0H8.13V4.23L11.93 2.97L12.96 6.08L9.16 7.37L11.57 10.64L8.89 12.59L6.48 9.32L4.03 12.59Z" fill="#0A0A0F"/></svg>
+            <span>Menos ruído, mais estratégia</span><svg viewBox="0 0 13 12.6"><path d="M4.03 12.59L1.39 10.64L3.8 7.37L0 6.08L1.02 2.97L4.83 4.23V0H8.13V4.23L11.93 2.97L12.96 6.08L9.16 7.37L11.57 10.64L8.89 12.59L6.48 9.32L4.03 12.59Z" fill="#0A0A0F"/></svg>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="hero-textos">
-      <p class="frase">Menos ruído, mais <span class="roxo">estratégia.</span></p>
-      <p class="apoio-hero"><span class="roxo">+</span> de 14 anos tirando marcas do improviso.<br>Sócio e head da <span class="carmim">Agência Define.</span></p>
+      <p class="frase">Menos ruído, mais estratégia.</p>
+      <p class="apoio-hero">+ de 14 anos tirando marcas do improviso.<br>Sócio e head da Agência Define.</p>
     </div>
   </header>
 
-  <div class="faixa" aria-hidden="true">
-    <div class="faixa-trilho">
-      <div class="faixa-grupo">
-        <span>Branding</span><svg viewBox="0 0 13 12.6"><path d="M4.03 12.59L1.39 10.64L3.8 7.37L0 6.08L1.02 2.97L4.83 4.23V0H8.13V4.23L11.93 2.97L12.96 6.08L9.16 7.37L11.57 10.64L8.89 12.59L6.48 9.32L4.03 12.59Z" fill="#0A0A0F"/></svg>
-        <span>Growth marketing</span><svg viewBox="0 0 13 12.6"><path d="M4.03 12.59L1.39 10.64L3.8 7.37L0 6.08L1.02 2.97L4.83 4.23V0H8.13V4.23L11.93 2.97L12.96 6.08L9.16 7.37L11.57 10.64L8.89 12.59L6.48 9.32L4.03 12.59Z" fill="#0A0A0F"/></svg>
-        <span>Design</span><svg viewBox="0 0 13 12.6"><path d="M4.03 12.59L1.39 10.64L3.8 7.37L0 6.08L1.02 2.97L4.83 4.23V0H8.13V4.23L11.93 2.97L12.96 6.08L9.16 7.37L11.57 10.64L8.89 12.59L6.48 9.32L4.03 12.59Z" fill="#0A0A0F"/></svg>
-        <span>IA com direção</span><svg viewBox="0 0 13 12.6"><path d="M4.03 12.59L1.39 10.64L3.8 7.37L0 6.08L1.02 2.97L4.83 4.23V0H8.13V4.23L11.93 2.97L12.96 6.08L9.16 7.37L11.57 10.64L8.89 12.59L6.48 9.32L4.03 12.59Z" fill="#0A0A0F"/></svg>
-        <span>Menos ruído, mais estratégia</span><svg viewBox="0 0 13 12.6"><path d="M4.03 12.59L1.39 10.64L3.8 7.37L0 6.08L1.02 2.97L4.83 4.23V0H8.13V4.23L11.93 2.97L12.96 6.08L9.16 7.37L11.57 10.64L8.89 12.59L6.48 9.32L4.03 12.59Z" fill="#0A0A0F"/></svg>
-      </div>
-    </div>
-  </div>
-
   <nav class="links" aria-label="Links">
-    <a class="link link-destaque" href="https://wa.me/5569984790898?text=Ol%C3%A1%2C%20Oseane!%20Vim%20pela%20bio%20do%20Victor%20e%20quero%20agendar%20um%20diagn%C3%B3stico." target="_blank" rel="noopener">
-      <span class="link-textos"><span class="link-rotulo">Para médicos e clínicas</span><span class="link-titulo">Agendar um diagnóstico</span><span class="link-apoio">Seu perfil pelos olhos do paciente.</span></span>
-      <span class="link-botao"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M2 20H37M37 20L23 6M37 20L23 34" stroke="#C10016" stroke-width="8.5" fill="none"/></svg></span>
-    </a>
-    <a class="link" href="https://topo.agenciadefine.com/" target="_blank" rel="noopener">
-      <span class="link-textos"><span class="link-rotulo">Agência</span><span class="link-titulo">Conheça a Define</span><span class="link-apoio">Marketing para a área da saúde.</span></span>
-      <span class="link-botao"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M2 20H37M37 20L23 6M37 20L23 34" stroke="#F5F0E6" stroke-width="8.5" fill="none"/></svg></span>
-    </a>
-    <a class="link" href="https://www.linkedin.com/in/victor-coelho-681ba6123/" target="_blank" rel="noopener">
-      <span class="link-textos"><span class="link-rotulo">LinkedIn</span><span class="link-titulo">Me acompanhe no LinkedIn</span><span class="link-apoio">Bastidores de marca, growth e IA.</span></span>
-      <span class="link-botao"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M2 20H37M37 20L23 6M37 20L23 34" stroke="#F5F0E6" stroke-width="8.5" fill="none"/></svg></span>
-    </a>
-    <a class="link" href="https://www.behance.net/victorrcoelho" target="_blank" rel="noopener">
-      <span class="link-textos"><span class="link-rotulo">Portfólio</span><span class="link-titulo">Veja meus trabalhos</span><span class="link-apoio">Marcas, identidades e campanhas.</span></span>
-      <span class="link-botao"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M2 20H37M37 20L23 6M37 20L23 34" stroke="#F5F0E6" stroke-width="8.5" fill="none"/></svg></span>
-    </a>
-    <a class="link" href="https://wa.me/5528999915889?text=Ol%C3%A1%2C%20Victor!%20Vim%20pela%20sua%20bio." target="_blank" rel="noopener">
-      <span class="link-textos"><span class="link-rotulo">WhatsApp</span><span class="link-titulo">Fale comigo</span><span class="link-apoio">Vamos conversar sobre a sua marca.</span></span>
-      <span class="link-botao"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M2 20H37M37 20L23 6M37 20L23 34" stroke="#F5F0E6" stroke-width="8.5" fill="none"/></svg></span>
-    </a>
+    <a class="link link-destaque" href="https://wa.me/5569984790898?text=Ol%C3%A1%2C%20Oseane!%20Vim%20pela%20bio%20do%20Victor%20e%20quero%20agendar%20um%20diagn%C3%B3stico." target="_blank" rel="noopener"><span class="link-icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2v2"/><path d="M5 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></svg></span><span class="link-textos"><span class="link-titulo">Agendar um diagnóstico</span><span class="link-apoio">Seu perfil pelos olhos do paciente.</span></span></a>
+    <a class="link" href="https://topo.agenciadefine.com/" target="_blank" rel="noopener"><span class="link-icone" aria-hidden="true"><svg viewBox="0 0 197.53 101.5" fill="currentColor" style="width:26px;height:auto"><path d="M197.53,100.11c-6.27,0-12,.17-17.71-.06-3.44-.14-5.5-2.89-5.83-6.84-.38-4.59-.18-9.19-.22-13.78-.07-8.04-.09-16.09-.17-24.13-.02-2.52-.49-4.99-1.32-7.37-2.36-6.8-10.25-8.47-15.2-3.22-2.96,3.14-4.15,7.12-5.03,11.2-.73,3.37-.98,6.8-.96,10.26.06,8.83.06,17.67,0,26.51-.02,2.77.56,5.23,2.66,7.18-.49.63-1.11.35-1.62.36-4.81.02-9.63.07-14.44-.03-4.02-.08-6.27-2.3-6.85-6.3-.29-2-.37-4-.37-6.01,0-14.51-.04-29.02.02-43.53.01-3.11-.3-6-3.14-8.33,6.07,0,11.79-.26,17.46.09,3.75.23,5.43,3.06,5.46,7.97.84-1.08,1.52-2.03,2.29-2.92,3.71-4.28,8.54-6.21,14.07-6.43,5.61-.22,11.04.74,16.02,3.43,7.99,4.32,11.46,11.4,11.59,20.19.16,10.84.06,21.69.05,32.54,0,3.32-.06,6.63,3.22,9.24Z"/><path d="M68.05,92.44c.02-26.58,0-53.16,0-79.74,0-2.01-.02-4.02-.41-6.01-.62-3.16-2.46-5.4-5.38-5.69-5.83-.58-11.7-.15-18.23-.27,3.23,2.43,3.6,5.38,3.61,8.44.02,10.34.02,20.69.05,31.03,0,1.78-.1,3.58.33,5.43-1.86-3.75-4.57-6.63-8.31-8.43-10.24-4.93-26.09-3.12-33.92,8.83C2.25,51.45.62,57.46.15,63.83c-.65,8.77.69,17.11,5.26,24.81,9.88,16.64,35.44,16.11,42.8,4.26.17,5.16,2.27,7.23,7.59,7.29,4.67.06,9.34.02,14.02,0,.37,0,.89.24,1.07-.44-2.28-1.9-2.84-4.45-2.84-7.31ZM44.36,83.37c-1.08,2.26-2.6,4.27-4.74,5.9-4.03,3.08-9.2,2.68-12.41-1.03-3.12-3.59-4.07-7.85-4.81-12.15-.49-2.83-.56-5.68-.58-8.54.04-5.29.41-10.54,2.7-15.52,1.16-2.52,2.77-4.78,5.79-5.94,2.95-1.14,5.75-.65,8.38.82,5.05,2.82,7.78,7.12,8.5,11.99,1.22,8.27.97,16.56-2.83,24.47Z"/><path d="M119.9,40.19v-4.37c-5.29,0-10.58,0-15.87-.02-.72,0-1.86.52-1.81-1.02.21-6.6-.59-13.23.55-19.78.7-6.65,8.53-11.93,16.23-7.84s8.42,13.22,9.51,16.62c.39,1.2.96,1.45,2.03,1.21.56-.13,1.12-.25,1.67-.38,4.34-1.03,8.66-2.15,12.16-5.11,3.74-3.17,3.93-7.06.61-10.65-2.09-2.26-4.71-3.73-7.49-4.93-5.26-2.25-10.82-3.24-16.47-3.71-11.32-.93-21.87,1.25-31.05,8.25-5.24,4-8.18,9.31-8.12,16.06.03,3.09-.08,6.18.03,9.27.06,1.55,0,6.97,0,8.39-.07,16.6-.06,33.2-.08,49.8,0,2.99-.42,5.86-3.46,8.17,6.07,0,11.53.08,16.99-.03,3.29-.07,5.25-1.75,6.21-4.95.6-2.01.7-4.09.7-6.18,0-15.45.03-19.32-.04-34.77,0-7.98,10.12-12.5,17.72-14.01Z"/></svg></span><span class="link-textos"><span class="link-titulo">Conheça a Define</span><span class="link-apoio">Marketing para a área da saúde.</span></span></a>
+    <a class="link" href="https://www.linkedin.com/in/victor-coelho-681ba6123/" target="_blank" rel="noopener"><span class="link-icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></span><span class="link-textos"><span class="link-titulo">Me acompanhe no LinkedIn</span><span class="link-apoio">Bastidores de marca, growth e IA.</span></span></a>
+    <a class="link" href="https://www.behance.net/victorrcoelho" target="_blank" rel="noopener"><span class="link-icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span><span class="link-textos"><span class="link-titulo">Veja meus trabalhos</span><span class="link-apoio">Marcas, identidades e campanhas.</span></span></a>
+    <a class="link" href="https://wa.me/5528999915889?text=Ol%C3%A1%2C%20Victor!%20Vim%20pela%20sua%20bio." target="_blank" rel="noopener"><span class="link-icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span><span class="link-textos"><span class="link-titulo">Fale comigo</span><span class="link-apoio">Vamos conversar sobre a sua marca.</span></span></a>
   </nav>
 
   <section class="servicos" aria-labelledby="t-servicos">
     <div class="servicos-topo">
-      <span class="rubrica roxo">( O que eu faço )</span>
-      <h2 class="titulo-secao" id="t-servicos">Estratégia que<br>corta <span class="roxo">o ruído.</span></h2>
+      <span class="rubrica">O que eu faço</span>
+      <h2 class="titulo-secao" id="t-servicos">Estratégia que<br>corta o ruído.</h2>
       <p>Se a sua marca merece mais que improviso e quer virar referência, precisa de um marketing que enxergue o todo.</p>
     </div>
     <div class="sanfona">
-      <div class="item"><button class="item-botao" aria-expanded="false"><span class="item-num">01</span><span class="item-titulo">Estratégia e gestão de marcas</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>Posicionamento claro, proposta de valor e uma voz coerente em cada ponto de contato. Com acompanhamento contínuo, a marca deixa de ser mais uma e vira referência.</p></div></div></div>
-      <div class="item"><button class="item-botao" aria-expanded="false"><span class="item-num">02</span><span class="item-titulo">Identidade visual</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>Logo, cores, tipografia e um sistema que mantém tudo coerente. Mais do que bonita, a identidade precisa mostrar o que a marca é.</p></div></div></div>
-      <div class="item"><button class="item-botao" aria-expanded="false"><span class="item-num">03</span><span class="item-titulo">Growth marketing</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>Atrair novos pacientes é só uma parte. Growth também é manter quem já chegou por perto e traçar a estratégia para o negócio crescer, com decisões baseadas em dados.</p></div></div></div>
-      <div class="item"><button class="item-botao" aria-expanded="false"><span class="item-num">04</span><span class="item-titulo">IA com direção criativa</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>A IA potencializa o processo criativo e abre novas possibilidades. No negócio, ajuda a tomar decisões com mais clareza, otimizando processos e transformando dados em informação.</p></div></div></div>
-      <div class="item"><button class="item-botao" aria-expanded="false"><span class="item-num">05</span><span class="item-titulo">Palestras e mentorias</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>Conversas para equipes e eventos sobre marca, estratégia e o uso real de IA no marketing.</p></div></div></div>
+      <div class="item"><button class="item-botao" aria-expanded="false"><span class="item-titulo">Estratégia e gestão de marcas</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>Posicionamento claro, proposta de valor e uma voz coerente em cada ponto de contato. Com acompanhamento contínuo, a marca deixa de ser mais uma e vira referência.</p></div></div></div>
+      <div class="item"><button class="item-botao" aria-expanded="false"><span class="item-titulo">Identidade visual</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>Logo, cores, tipografia e um sistema que mantém tudo coerente. Mais do que bonita, a identidade precisa mostrar o que a marca é.</p></div></div></div>
+      <div class="item"><button class="item-botao" aria-expanded="false"><span class="item-titulo">Growth marketing</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>Atrair novos pacientes é só uma parte. Growth também é manter quem já chegou por perto e traçar a estratégia para o negócio crescer, com decisões baseadas em dados.</p></div></div></div>
+      <div class="item"><button class="item-botao" aria-expanded="false"><span class="item-titulo">IA com direção criativa</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>A IA potencializa o processo criativo e abre novas possibilidades. No negócio, ajuda a tomar decisões com mais clareza, otimizando processos e transformando dados em informação.</p></div></div></div>
+      <div class="item"><button class="item-botao" aria-expanded="false"><span class="item-titulo">Palestras e mentorias</span><svg class="item-mais" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 0V18M0 9H18" stroke="#A855F7" stroke-width="6"/></svg></button><div class="item-corpo"><div><p>Conversas para equipes e eventos sobre marca, estratégia e o uso real de IA no marketing.</p></div></div></div>
     </div>
   </section>
 
   <section class="quem" aria-labelledby="t-quem">
     <div class="quem-foto"><img src="img/quem-sou.webp" alt="Victor Coelho sorrindo, de óculos, em frente ao notebook com luz roxa ao fundo" width="1026" height="1200" loading="lazy"></div>
-    <span class="rubrica">( Quem sou )</span>
-    <h2 id="t-quem">Prazer, <span class="roxo">Victor.</span></h2>
+    <span class="rubrica">Quem sou</span>
+    <h2 id="t-quem">Prazer, Victor.</h2>
     <div class="quem-texto">
       <p>Sou sócio e head da Agência Define, em Cacoal (RO). Há mais de 14 anos ajudo marcas a sair do improviso, unindo estratégia, design e um uso real de IA na criação.</p>
       <p>Aqui eu falo de marca para médicos e clínicas, e de bastidor para quem trabalha com criação.</p>
@@ -187,9 +171,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--roxo);outline-offse
 <script>
 (function(){
   var trilho=document.querySelector('.faixa-trilho');
-  var grupo=trilho.firstElementChild;
-  var copia=grupo.cloneNode(true);
-  trilho.appendChild(copia);
+  trilho.appendChild(trilho.firstElementChild.cloneNode(true));
   var lista=[].slice.call(document.querySelectorAll('.item'));
   lista.forEach(function(item){
     item.querySelector('.item-botao').addEventListener('click',function(){
